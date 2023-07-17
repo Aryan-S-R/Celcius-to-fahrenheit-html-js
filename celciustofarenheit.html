@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <style>
+        label{
+            font-size: 35px;
+        }
+        input{
+            padding: 10px;
+            border: solid;
+            border-width: 3px;
+            border-color:chocolate;
+            
+        }
+    </style>
+   </head>
+<body class="bg-info">
+    <div class="container">
+    <hr><h1 class="text-success"><strong>Converting Celcius To Farenheit</strong></h1><hr><br><br>
+    <div class="row">
+        <div class="col-lg-5">
+            <p>
+               <label class="text-danger"><strong>Celcius:</strong></label>
+                <input type="number" id="celciustemp" placeholder="Celcius"
+                oninput="CtoFConverter(this.value)" onchange="CtoFConverter(this.value)">
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <p>
+                <label class="text-danger"><strong>Farenheit:</strong></label>
+                <input type="text" class="farenheit" placeholder="Farenheit">
+                </p>
+        </div>
+    </div>
+</div>
+<script>
+    alert('❗Welcome to My Webpage❗')
+    function CtoFConverter(temp){
+       document.querySelector(".farenheit").value=(temp-32)/1.7;
+    }
+   </script>
+</body>
+</html>
